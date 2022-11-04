@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<h1>HTML TAG REFERANCE</h1><br>
+
+	<h3>The kbd element</h3>
+
+	<p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
+
+	<p>Press <kbd>Cmd</kbd> + <kbd>C</kbd> to copy text (Mac OS).</p><br>
+
+	<h3>The label element</h3>
+
+	<p>Click on one of the text labels to toggle the related radio button:</p>
+
+	<form action=" ">
+	<input type="radio" id="html" name="fav_language" value="HTML">
+	<label for="html">HTML</label><br>
+	<input type="radio" id="css" name="fav_language" value="CSS">
+	<label for="css">CSS</label><br>
+	<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+	<label for="javascript">JavaScript</label><br><br>
+	  <input type="submit" value="Submit">
+	</form><br>
+
+	<h3>The legend element</h3>
+
+	<form action=" ">
+	 <fieldset>
+	  <legend>Personalia:</legend>
+	  <label for="fname">First name:</label>
+	  <input type="text" id="fname" name="fname"><br><br>
+	  <label for="lname">Last name:</label>
+	  <input type="text" id="lname" name="lname"><br><br>
+	  <label for="email">Email:</label>
+	  <input type="email" id="email" name="email"><br><br>
+	  <label for="birthday">Birthday:</label>
+	  <input type="date" id="birthday" name="birthday"><br><br>
+	  <input type="submit" value="Submit">
+	 </fieldset>
+	</form><br>
+
+<h3>The ol and ul elements</h3>
+
+	<p>The ol element defines an ordered list:</p>
+	<ol>
+	  <li>Coffee</li>
+	  <li>Tea</li>
+	  <li>Milk</li>
+	</ol>
+
+	<p>The ul element defines an unordered list:</p>
+	<ul>
+	  <li>Coffee</li>
+	  <li>Tea</li>
+	  <li>Milk</li>
+	</ul><br>
+
+<h3>The main element</h3>
+
+	<main>
+	  <h2>Most Popular Browsers</h2>
+	  <p>Chrome, Firefox, and Edge are the most used browsers today.</p>
+
+	  <article>
+	    <h2>Google Chrome</h2>
+	    <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+	  </article>
+
+	  <article>
+	    <h2>Mozilla Firefox</h2>
+	    <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+	  </article>
+
+	  <article>
+	    <h2>Microsoft Edge</h2>
+	    <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+	  </article>
+	</main><br>
+
+<h2>The map and area elements</h2>
+
+<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+
+	<img src="workplace.png" alt="Workplace" usemap="#workmap" width="600" height="400">
+
+	<map name="workmap">
+	  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+	  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+	  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+	</map><br>
+
+<h3>The mark element</h3>
+
+	<p>Do not forget to buy <mark>milk</mark> today.</p><br>
+
+<h3>The meter element</h3>
+
+	<p>The meter element is used to display a gauge:</p>
+
+	<label for="disk_c">Disk usage C:</label>
+	<meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+
+	<label for="disk_d">Disk usage D:</label>
+	<meter id="disk_d" value="0.6">60%</meter>
+
+	<p><strong>Note:</strong> The meter tag is not supported in Edge 12 (or earlier).</p><br>
+
+<h3>The nav element</h3>
+
+	<p>The nav element defines a set of navigation links:</p>
+
+	<nav>
+	<a href="">HTML</a> |
+	<a href="">CSS</a> |
+	<a href="">JavaScript</a> |
+	<a href="">Python</a>
+	</nav><br>
+
+<h3>The optgroup element</h3>
+
+	<p>The optgroup tag is used to group related options in a drop-down list:</p>
+
+	<form action="/action_page.php">
+	  <label for="cars">Choose a car:</label>
+	  <select name="cars" id="cars">
+	    <optgroup label="Swedish Cars">
+	      <option value="volvo">Volvo</option>
+	      <option value="saab">Saab</option>
+	    </optgroup>
+	    <optgroup label="German Cars">
+	      <option value="mercedes">Mercedes</option>
+	      <option value="audi">Audi</option>
+	    </optgroup>
+	  </select>
+	  <br><br>
+	  <input type="submit" value="Submit">
+	</form><br>
+
+<h3>The option element</h3>
+
+	<label for="cars">Choose a car:</label>
+
+	<select id="cars">
+	  <option value="volvo">Volvo</option>
+	  <option value="saab">Saab</option>
+	  <option value="opel">Opel</option>
+	  <option value="audi">Audi</option>
+	</select><br>
+
+<h3>The output element</h3>
+
+	<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+	<input type="range" id="a" value="50">
+	+<input type="number" id="b" value="25">
+	=<output name="x" for="a b"></output>
+	</form>
+
+	<p><strong>Note:</strong> The output element is not supported in Edge 12 (or earlier).</p><br>
+
+<h3>The param element</h3>
+
+	<object data="horse.mp3">
+	<param name="autoplay" value="true">
+	</object><br>
+
+<h3>The s element</h3>
+
+	<p><s>Only 50 tickets left!</s></p>
+	<p>SOLD OUT!</p><br>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
